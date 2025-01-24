@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Premium</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/YouTube_Premium_logo.svg/2560px-YouTube_Premium_logo.svg.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .venta {
+            background-color: white;
+            border: 2px solid #ff0000;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px; /* Ajuste del tamaño de la venta */
+            text-align: center;
+            position: relative;
+        }
+        .venta p, .venta ul {
+            margin: 10px 0; /* Ajuste de margen para pegar más el texto al logo */
+            color: black; /* Texto en color negro */
+            font-size: 16px;
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+        .header-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: black; /* Texto en color negro */
+            margin-top: 10px; /* Ajuste de margen superior */
+        }
+        .header-image {
+            width: 80%; /* Ajuste del tamaño de la imagen */
+            height: auto;
+            margin-bottom: 10px; /* Ajuste de margen inferior */
+        }
+        .botones {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .boton {
+            background-color: #ff0000; /* Color del botón de compras */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .boton-volver {
+            background-color: #ed7318; /* Color naranja */
+        }
+        .boton:hover {
+            background-color: #cc0000;
+        }
+        .boton-volver:hover {
+            background-color: #d66616; /* Color naranja oscuro */
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onload="openModal()">
+    <div class="overlay" id="overlay">
+        <div class="venta">
+            <button class="close-button" onclick="window.location.href='https://www.vendeygana.net/user/'">X</button>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/YouTube_Premium_logo.svg/2560px-YouTube_Premium_logo.svg.png" alt="YouTube Premium" class="header-image">
+            <div class="header-title">📺 Descubre YouTube Premium: La mejor experiencia de video.</div>
+            <p>🌟 <strong>Ventajas de YouTube Premium:</strong></p>
+            <ul>
+                <li>• Sin Anuncios: Disfruta de videos sin interrupciones.</li>
+                <li>• Reproducción en Segundo Plano: Sigue escuchando mientras usas otras apps.</li>
+                <li>• Descargas: Guarda tus videos favoritos y míralos sin conexión.</li>
+                <li>• YouTube Music: Acceso a millones de canciones y playlists.</li>
+            </ul>
+            <p>📲 Compra tu cuenta hoy con Vende y Gana y lleva tu experiencia de YouTube al siguiente nivel. 🎥🎵</p>
+            <div class="botones">
+                <button class="boton" onclick="window.location.href='https://departamentodecuentas.company.site/products/otras-cuentas'">Comprar</button>
+                <button class="boton boton-volver" onclick="window.location.href='https://www.vendeygana.net/user/'">Volver a Vende y Gana</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
