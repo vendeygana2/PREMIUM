@@ -65,15 +65,7 @@
             border-radius: 5px;
             cursor: pointer;
             text-transform: uppercase;
-        }
-        .boton-volver {
-            background-color: #ed7318; /* Color naranja */
-        }
-        .boton:hover {
-            background-color: #cc0000;
-        }
-        .boton-volver:hover {
-            background-color: #d66616; /* Color naranja oscuro */
+            animation: pulse 2s infinite; /* Añadir animación de titileo */
         }
         .close-button {
             position: absolute;
@@ -89,6 +81,17 @@
             text-align: center;
             line-height: 25px;
             font-weight: bold;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 5px #ff0000;
+            }
+            50% {
+                box-shadow: 0 0 20px #ff0000;
+            }
+            100% {
+                box-shadow: 0 0 5px #ff0000;
+            }
         }
     </style>
 </head>
@@ -107,8 +110,7 @@
             </ul>
             <p>📲 Compra tu cuenta hoy con Vende y Gana y lleva tu experiencia de YouTube al siguiente nivel. 🎥🎵</p>
             <div class="botones">
-                <button class="boton" onclick="window.location.href='https://departamentodecuentas.company.site/products/otras-cuentas'">Comprar</button>
-                <button class="boton boton-volver" onclick="window.location.href='https://www.vendeygana.net/user/'">Volver a Vende y Gana</button>
+                <button class="boton" onclick="window.location.href='https://vendeygana2.github.io/compraryotubepremium/'">Comprar</button>
             </div>
         </div>
     </div>
